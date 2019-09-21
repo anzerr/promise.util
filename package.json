@@ -1,0 +1,34 @@
+{
+	"name": "promise.util",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"linter": "eslint index.js",
+		"test": "npm run linter && node test.js"
+	},
+	"keywords": [],
+	"author": "anzerr",
+	"license": "MIT",
+	"devDependencies": {
+		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
+	},
+	"dependencies": {
+		"type.util": "git+https://github.com/anzerr/type.util.git"
+	},
+	"eslintConfig": {
+		"extends": "eslint-config-basic"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:anzerr/promise.util.git"
+	},
+	"engines": {
+		"node": ">= 0.10.0"
+	},
+	"types": "index.d.ts",
+	"bugs": {
+		"url": "https://github.com/anzerr/promise.util/issues"
+	},
+	"homepage": "https://github.com/anzerr/promise.util#readme"
+}
