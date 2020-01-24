@@ -1,34 +1,38 @@
 {
 	"name": "promise.util",
 	"version": "1.0.1",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"linter": "eslint index.js",
-		"test": "npm run linter && node test.js"
-	},
-	"keywords": [],
-	"author": "anzerr",
-	"license": "MIT",
-	"devDependencies": {
-		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
-	},
-	"dependencies": {
-		"type.util": "git+https://github.com/anzerr/type.util.git"
-	},
-	"eslintConfig": {
-		"extends": "eslint-config-basic"
+	"description": "small promise util",
+	"keywords": [
+		"nodejs",
+		"promise",
+		"util"
+	],
+	"homepage": "https://github.com/anzerr/promise.util#readme",
+	"bugs": {
+		"url": "https://github.com/anzerr/promise.util/issues"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git@github.com:anzerr/promise.util.git"
 	},
+	"license": "MIT",
+	"author": "anzerr",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"scripts": {
+		"linter": "eslint index.js",
+		"test": "npm run linter && node test.js"
+	},
+	"eslintConfig": {
+		"extends": "eslint-config-basic"
+	},
+	"dependencies": {
+		"type.util": "git+https://github.com/anzerr/type.util.git"
+	},
+	"devDependencies": {
+		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
+	},
 	"engines": {
 		"node": ">= 0.10.0"
-	},
-	"types": "index.d.ts",
-	"bugs": {
-		"url": "https://github.com/anzerr/promise.util/issues"
-	},
-	"homepage": "https://github.com/anzerr/promise.util#readme"
+	}
 }
