@@ -22,6 +22,26 @@ Promise.resolve('cat').then(promise.tap(() => {
 	assert.equal(res, 'cat');
 });
 
+promise.measure(() => {
+	return promise.limit(() => {
+		return Promise.resolve('dog');
+	}, 500).then((res) => {
+		assert.equal(res, 'dog');
+	});
+}).then((res) => {
+	assert.equal(Math.round(res / 1e8), 5);
+});
+
+promise.measure(() => {
+	return promise.limit(() => {
+		return promise.delay(1000).then(() => 'dog');
+	}, 500).then((res) => {
+		assert.equal(res, 'dog');
+	});
+}).then((res) => {
+	assert.equal(Math.round(res / 1e8), 10);
+});
+
 const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 promise.measure(() => {

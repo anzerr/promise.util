@@ -45,6 +45,20 @@ class Util {
 		return new Promise((resolve) => setTimeout(resolve, n));
 	}
 
+	sleep(n) {
+		return this.delay(n);
+	}
+
+	limit(cd, n) {
+		let out = null;
+		return this.measure(() => {
+			return cd().then((res) => (out = res));
+		}).then((dur) => {
+			const delay = Math.max(0, n - (dur / 1e6));
+			return (delay === 0) ? null : this.delay(delay);
+		}).then(() => out);
+	}
+
 	measure(cd) {
 		let start = process.hrtime();
 		return cd().then(() => {

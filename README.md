@@ -13,6 +13,7 @@ npm install --save @anzerr/promise.util
 ```
 
 ### `Example`
+Look at tests for more usage examples
 ``` javascript
 const promise = require('promise.util');
 const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
