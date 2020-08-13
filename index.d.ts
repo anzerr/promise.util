@@ -3,6 +3,8 @@ declare class Util {
     tap(cd: (res: any) => Promise<any> | any): (res: any) => Promise<any> | any;
     timeout(cd: () => Promise<any> | any, n: number, err?: any): Promise<any>;
     delay(n?: number): Promise<any>;
+    sleep(n?: number): Promise<any>;
+    wait(n?: number): Promise<any>;
     measure(cd: (...args: any[]) => any): Promise<number>;
     each(data: any, cd: (v: any, k: number | string) => any, max?: number): Promise<any>;
     bulk(data: any[], cd: (v: any, k: number | string) => any, max?: number, size?: number): Promise<any>;

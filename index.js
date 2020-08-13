@@ -49,6 +49,10 @@ class Util {
 		return this.delay(n);
 	}
 
+	wait(n) {
+		return this.wait(n);
+	}
+
 	limit(cd, n) {
 		let out = null;
 		return this.measure(() => {
