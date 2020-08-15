@@ -50,7 +50,7 @@ class Util {
 	}
 
 	wait(n) {
-		return this.wait(n);
+		return this.delay(n);
 	}
 
 	limit(cd, n) {
