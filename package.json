@@ -1,6 +1,6 @@
 {
 	"name": "promise.util",
-	"version": "1.0.9",
+	"version": "1.0.10",
 	"description": "small promise util",
 	"keywords": [
 		"nodejs",
