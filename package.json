@@ -20,7 +20,7 @@
 	"main": "index.js",
 	"types": "index.d.ts",
 	"scripts": {
-		"test": "npm run linter && node test.js"
+		"test": "node test.js"
 	},
 	"dependencies": {
 		"type.util": "git+https://github.com/anzerr/type.util.git"
